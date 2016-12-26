@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1fa6a6a6"
+    android:orientation="vertical"
+    tools:context="com.bwie.xyn.demo.SurePayActivity">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_lin" />
+
+    <LinearLayout
+        android:id="@id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/tv_title"
+        android:background="#fff"
+        android:padding="20px">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+        <TextView
+               android:layout_centerVertical="true"
+            android:textColor="#f00"
+            android:id="@+id/tv_money_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp" />
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:id="@+id/bt_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#7fff0000"
+            android:text="付款" />
+      </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_above="@id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_adress_surPay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="#fff"
+                android:drawableLeft="@mipmap/address"
+                android:drawableRight="@mipmap/next_icon"
+                android:padding="20px"
+                android:text="请填写收货地址"
+                android:textSize="20dp"></TextView>
+
+            <com.bwie.xyn.demo.view.MyListview
+                android:id="@+id/lv_surPay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="#fff"></com.bwie.xyn.demo.view.MyListview>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_showAll_sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3px"
+                android:background="#fff"
+                android:gravity="center_horizontal"
+                android:padding="5px"
+                android:text="显示全部"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tv_shownews_sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3px"
+                android:background="#fff"
+                android:gravity="center_horizontal"
+                android:padding="5px"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="#fff"
+                android:padding="20px"
+                android:paddingLeft="20px"
+                android:text="支付方式"
+                android:textSize="20dp" />
+
+              <RadioGroup
+                  android:background="#fff"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+                    <RadioButton
+                        android:id="@+id/rb_zfb_pay"
+                        android:checked="true"
+                        android:paddingLeft="20px"
+                        android:button="@null"
+                        android:text="支付宝"
+                        android:padding="30px"
+                        android:drawableRight="@drawable/checkbox_selector"
+                        android:drawableLeft="@mipmap/icon_alipay"
+                        android:layout_width="match_parent"
+                        android:layout_height="200px" />
+                  <RadioButton
+                      android:id="@+id/rb_wx_pay"
+                      android:text="微信支付"
+                         android:padding="30px"
+                      android:button="@null"
+                      android:drawableRight="@drawable/checkbox_selector"
+                      android:drawableLeft="@mipmap/icon_wxpay"
+                      android:layout_width="match_parent"
+                      android:layout_height="200px" />
+              </RadioGroup>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

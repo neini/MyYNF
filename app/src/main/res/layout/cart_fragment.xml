@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1fa6a6a6">
+
+    <RelativeLayout
+        android:id="@+id/rl_car"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1fa6a6a6">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:background="#fff"
+            android:padding="20px">
+
+            <TextView
+                android:id="@+id/tv_carNum"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center_horizontal"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tv_carEdit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="编辑"
+                android:textColor="#000"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_car_selectAll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:button="@null"
+                android:drawableLeft="@drawable/checkbox_selector"
+
+                android:padding="20px"
+                android:text="全选"
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/bt_car_delete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#7fff0000"
+                android:text="删除"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_car_tolMoney"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="总计"
+                android:textColor="#f00"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/bt_car_pay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#7fff0000"
+                android:text="结算" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_cart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ll2"
+            android:layout_below="@id/ll"
+            android:layout_marginBottom="10px"
+            android:layout_marginTop="20px"
+            android:background="#fff"></ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_car_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1fa6a6a6"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:gravity="center_horizontal"
+                android:text="购物车"
+                android:textColor="#000"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="350px"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20px"
+            android:gravity="center_horizontal"
+            android:text="购物车还是空的哦快去逛逛吧"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:layout_above="@id/tv"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/shopping_trolley_empty" />
+
+        <Button
+            android:id="@+id/bt_car_shoping"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20px"
+            android:background="#7fff0000"
+            android:text="去逛一逛"
+            android:textColor="#000" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

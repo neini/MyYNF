@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:drawableTop="@mipmap/classify_triangle"
+        android:gravity="center_horizontal"
+        android:text="— 明星产品 —"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <com.bwie.xyn.demo.view.MyGrideView
+        android:id="@+id/gv_classify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2">
+
+    </com.bwie.xyn.demo.view.MyGrideView>
+
+</LinearLayout>

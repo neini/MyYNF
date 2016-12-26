@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.bwie.xyn.demo.MainActivity">
+
+    <RadioGroup
+        android:background="#fff"
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/mrb_home"
+            android:button="@null"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="首页"
+            android:checked="true"
+            android:textColor="#a6f00000"
+            android:drawableTop="@drawable/home_selector"/>
+
+        <RadioButton
+            android:id="@+id/mrb_category"
+            android:button="@null"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="分类"
+            android:drawableTop="@drawable/category_selector"/>
+        <RadioButton
+            android:id="@+id/mrb_cart"
+            android:button="@null"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="购物车"
+            android:drawableTop="@drawable/cart_selector"/>
+
+        <RadioButton
+            android:id="@+id/mrb_mine"
+            android:button="@null"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="个人中心"
+            android:drawableTop="@drawable/mine_selector"/>
+
+
+    </RadioGroup>
+<com.bwie.xyn.demo.view.NoscrollViewPage
+    android:id="@+id/vp_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/rg_main"
+    />
+
+</RelativeLayout>

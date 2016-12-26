@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1fa6a6a6"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <EditText
+            android:id="@+id/et_category"
+             android:textColor="#3f000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:layout_marginTop="10px"
+            android:background="@mipmap/checkin_btn_bg"
+            android:gravity="center_horizontal"
+            android:text=" 请输入查找的商品名"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/sv_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+                <include layout="@layout/category_star"/>
+
+                <TextView
+                       android:id="@+id/tv_lookAll_category"
+                       android:layout_marginBottom="10dp"
+                       android:layout_marginTop="10dp"
+                       android:textColor="#000"
+                       android:textSize="20dp"
+                       android:gravity="center_horizontal"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="查看所有商品"/>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </com.liaoinstan.springview.widget.SpringView>
+
+
+
+</LinearLayout>

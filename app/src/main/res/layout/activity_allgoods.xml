@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bwie.xyn.demo.AllgoodsActivity">
+
+    <include layout="@layout/title_lin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginTop="2px"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/tv_normol_All"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="默认排序"
+              android:textColor="#000"
+              />
+
+        <TextView
+            android:id="@+id/tv_up_All"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#000"
+            android:text="价格升序" />
+
+        <TextView
+            android:id="@+id/tv_low_All"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#000"
+            android:text="价格降序" />
+
+    </LinearLayout>
+
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/springView_All"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.bwie.xyn.demo.view.MyGrideView
+                android:layout_marginTop="20px"
+                android:background="#fff"
+                android:numColumns="2"
+                android:id="@+id/gv_Allgoods"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></com.bwie.xyn.demo.view.MyGrideView>
+
+        </ScrollView>
+    </com.liaoinstan.springview.widget.SpringView>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1fa6a6a6"
+    tools:context=".AdressChooseActivity">
+
+    <include  android:id="@+id/title"  layout="@layout/title_lin" />
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bt_addAdr"
+        android:layout_marginTop="10px"
+        android:layout_marginBottom="10px"
+        android:layout_width="wrap_content"
+        android:background="#7fff0000"
+        android:layout_height="wrap_content"
+        android:text="添加地址" />
+
+    <ListView
+        android:layout_above="@id/bt_addAdr"
+        android:layout_below="@id/title"
+        android:id="@+id/lv_adMa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:divider="#00000000"
+        android:dividerHeight="10px"></ListView>
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FuActivity">
+
+    <include layout="@layout/title_lin" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RadioGroup
+            android:id="@+id/rg_fu"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_marginTop="10px"
+            android:background="#fff"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:background="#fff"
+        android:id="@+id/vp_fu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20px">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

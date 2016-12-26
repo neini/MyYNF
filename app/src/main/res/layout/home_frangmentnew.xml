@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="5px"
+        android:text="御泥坊VIP商城"
+        android:textColor="#f00"
+        android:textSize="20dp" />
+
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/springView_homeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.bwie.xyn.demo.view.RollViewPager
+                        android:id="@+id/vp_homeFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="600px">
+
+                    </com.bwie.xyn.demo.view.RollViewPager>
+
+                    <LinearLayout
+                        android:id="@+id/ll_dot_homefragMent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/vp_homeFragment"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <com.bwie.xyn.demo.view.MyGrideView
+                    android:id="@+id/gv_homeFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="200px"
+                    android:layout_marginTop="5px"
+                    android:background="#fff"
+                    android:numColumns="4"></com.bwie.xyn.demo.view.MyGrideView>
+
+                <TextView
+                    android:id="@+id/tv_hot_homefragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:background="#fff"
+                    android:gravity="center_horizontal"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="600px"
+                    android:background="#fff"
+                    android:focusable="false"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.bwie.xyn.demo.view.MyGrideView
+                            android:id="@+id/gv_homeFragmentHot"
+                            android:layout_width="2800px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="40px"
+                            android:numColumns="6"></com.bwie.xyn.demo.view.MyGrideView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5px"
+                    android:background="#fff"
+                    android:clipChildren="false"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_activity__homefragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10px"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="优惠活动"
+                        android:textColor="#000"
+                        android:textSize="20dp" />
+
+                    <com.bwie.xyn.demo.view.RollViewPager
+                        android:id="@+id/vp_activity_homefragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="400px"
+                        android:layout_marginLeft="100px"
+                        android:layout_marginRight="100px"
+                        android:layout_marginTop="10px"
+                        android:layout_weight="7"
+                        android:background="#fff"
+                        android:clipChildren="false"></com.bwie.xyn.demo.view.RollViewPager>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="热门专题"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <com.bwie.xyn.demo.view.MyListview
+                    android:id="@+id/lv_hotTile_homeFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff">
+
+                </com.bwie.xyn.demo.view.MyListview>
+
+                <com.bwie.xyn.demo.view.MyGrideView
+                    android:id="@+id/gv_homeFragmentMore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:background="#fff"
+                    android:numColumns="2"></com.bwie.xyn.demo.view.MyGrideView>
+
+                <TextView
+                    android:id="@+id/tv_home_loagAll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:text="查看更多商品"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </com.liaoinstan.springview.widget.SpringView>
+
+</LinearLayout>

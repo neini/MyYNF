@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+    <LinearLayout
+
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+            android:id="@+id/img_classify_facial_mask"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:src="@mipmap/classify_facial_mask" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <ImageView
+
+                    android:id="@+id/img_classify_emollient_water"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/classify_emollient_water"/>
+                <ImageView
+                    android:id="@+id/img_classify_body_lotion"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/classify_body_lotion"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20px"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/img_classify_facial_cleanser"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/classify_facial_cleanser"/>
+                <ImageView
+                    android:id="@+id/img_classify_other"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/classify_other"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20px"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/img_classify_kit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/classify_kit"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+

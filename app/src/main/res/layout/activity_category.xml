@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1fa6a6a6"
+    tools:context="com.bwie.xyn.demo.CategoryActivity">
+
+    <include layout="@layout/title_lin" />
+
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/sv_categoryActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.bwie.xyn.demo.view.MyGrideView
+                android:background="#fff"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:id="@+id/gv_categoryActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:numColumns="2">
+
+            </com.bwie.xyn.demo.view.MyGrideView>
+        </ScrollView>
+    </com.liaoinstan.springview.widget.SpringView>
+
+</LinearLayout>

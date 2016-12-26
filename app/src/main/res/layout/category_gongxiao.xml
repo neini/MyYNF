@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <TextView
+        android:textColor="#000"
+        android:layout_marginTop="20px"
+         android:text="— 按功效 —"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="20dp" />
+
+    <TextView
+
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:gravity="center_horizontal"
+        android:text="美丽从选对产品开始"
+        android:textColor="#7fff0000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px"
+        android:layout_marginTop="10px">
+
+        <ImageView
+            android:id="@+id/img_classify_hydrating"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/classify_hydrating" />
+
+        <ImageView
+            android:id="@+id/img_classify_soothing"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/classify_soothing" />
+
+        <ImageView
+            android:id="@+id/img_classify_control_oil"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/classify_control_oil" />
+
+        <ImageView
+            android:id="@+id/img_classify_whitening"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/classify_whitening" />
+
+        <ImageView
+            android:id="@+id/img_classify_firming"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/classify_firming" />
+
+
+    </LinearLayout>
+</LinearLayout>
